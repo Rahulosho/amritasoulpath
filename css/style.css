@@ -8,6 +8,7 @@
 
 
 }
+
 .bg-beige {
     background: #FEFBEA;
 }
@@ -547,3 +548,78 @@
     letter-spacing: 1px;
     box-shadow: none;
 }
+
+
+
+
+
+/*** about page start ***/
+/* Timeline line centered and responsive */
+.timeline-wrapper {
+  position: relative;
+  padding-top: 30px;
+}
+
+.timeline-line {
+  height: 2px;
+  background-color: #d0b28c;
+  position: absolute;
+  top: 50px; /* Aligns with center of the circles */
+  left: 9%;   /* Adjust until it lines up with first circle */
+  right: 9%;  /* Adjust until it ends at last circle */
+  z-index: 0;
+}
+/* Circle styles */
+.timeline-step .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f5f1e7;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-step.active .circle {
+  background: #d0b28c;
+  color: #fff;
+}
+
+/* Step wrapper */
+.timeline-step {
+  flex: 1;
+  cursor: pointer;
+  text-align: center;
+  min-width: 60px;
+}
+
+/* Label separated from line */
+.timeline-step .label {
+  font-size: 1.3rem;
+  margin-top: 20px; /* separates label more from the line */
+}
+
+/* Show line on small devices */
+@media (max-width: 768px) {
+  .timeline-line {
+    display: block;
+    margin: 0 20px;
+  }
+  .timeline-step .label {
+  font-size: 0.9rem;
+  margin-top: 20px; /* separates label more from the line */
+}
+
+}
+
+    
+
+/*** about page start ***/
+
+
+
