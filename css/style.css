@@ -8,11 +8,15 @@
 
 
 }
+/* utility classes start */
 
 .bg-beige {
     background: #FEFBEA;
 }
 
+
+
+/* utility classes end */
 .back-to-top {
     position: fixed;
     display: none;
@@ -617,9 +621,69 @@
 
 }
 
-    
+   /*timeline img resposnvie   */
+   .timeline-text-section {
+    padding-top: 0px;
+    margin-top: 0px;
 
-/*** about page start ***/
+}
+
+
+   
+   .custom-img-responsive {
+  max-width: 60%;      /* Smaller image for small screens */
+        /* Add vertical margin */
+}
+
+@media (min-width: 768px) {
+  .custom-img-responsive {
+    max-width: 100%;   /* Full width in desktop */
+    margin: 0;         /* Remove margin on larger screens */
+  }
+}
+
+/* course card start */
+.course-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25); /* much darker and deeper shadow */
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s ease;
+}    
+
+
+.course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card .img-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    .course-card .img-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    .course-card .badge-group {
+      margin-top: 1rem;
+    }
+
+    .badge-custom {
+      font-size: 0.75rem;
+      padding: 0.4em 0.75em;
+      border-radius: 0.5rem;
+    }
+
+
+
+
+/*** about page end ***/
 
 
 
