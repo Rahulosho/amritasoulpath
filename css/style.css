@@ -644,6 +644,30 @@
   
 }
 
+@media (max-width: 375px) {
+  /* General adjustments for labels */
+  .timeline-step .label {
+    position: relative;
+    font-size: 0.75rem;
+    line-height: 1.1;
+  }
+
+  /* Move specific labels ABOVE the circle */
+  #survival-label,
+  #breaking-label,
+  #rebirth-label {
+    order: -1; /* puts it before the circle */
+    margin-bottom: 4px;
+  }
+
+  /* Move specific labels BELOW the circle */
+  #hustle-label,
+  #awakening-label {
+    margin-top: 4px;
+  }
+}
+
+
 
 /* course card start */
 .course-card {
