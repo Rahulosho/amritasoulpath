@@ -216,183 +216,158 @@
 
     <!-- About End -->
 
-    <!-- timeline start  -->
-    <div class="container text-center">
-      <div
-        class="text-center mx-auto wow fadeInUp"
-        data-wow-delay="0.1s"
-        style="max-width: 500px"
-      >
-        <p class="section-title bg-white text-center text-primary px-3" id="timeline-title">
-          MY Journey
+<!-- timeline start -->
+<div class="container text-center">
+  <div
+    class="text-center mx-auto wow fadeInUp"
+    data-wow-delay="0.1s"
+    style="max-width: 500px"
+  >
+    <p class="section-title bg-white text-center text-primary px-3" id="timeline-section-title">
+      MY Journey
+    </p>
+    <h2 id="timeline-main-heading" class="mb-3">Childhood of Survival</h2>
+  </div>
+
+  <!-- Timeline container -->
+  <div class="position-relative my-5 timeline-wrapper">
+    <div class="timeline-line mx-auto"></div>
+
+    <div class="d-flex justify-content-between flex-wrap position-relative z-1 px-2">
+      <div class="timeline-step active text-center" onclick="changeSection('survival', this)">
+        <div class="circle mx-auto">1</div>
+        <div class="label">Survival</div>
+      </div>
+
+      <div class="timeline-step text-center" onclick="changeSection('hustle', this)">
+        <div class="circle mx-auto">2</div>
+        <div class="label">Hustle</div>
+      </div>
+
+      <div class="timeline-step text-center" onclick="changeSection('breaking', this)">
+        <div class="circle mx-auto">3</div>
+        <div class="label">Breaking</div>
+      </div>
+
+      <div class="timeline-step text-center" onclick="changeSection('awakening', this)">
+        <div class="circle mx-auto">4</div>
+        <div class="label">Awakening</div>
+      </div>
+
+      <div class="timeline-step text-center" onclick="changeSection('rebirth', this)">
+        <div class="circle mx-auto">5</div>
+        <div class="label">Rebirth</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container timeline-text-section mb-5">
+  <section id="survival" class="py-5">
+    <div class="container">
+      <div class="row align-items-center flex-column-reverse flex-md-row">
+        <div class="col-md-6 text-center text-md-start">
+          <h3 class="mb-3">Childhood of Survival</h3>
+          <p>
+            Amrita was born in South America, into a life that demanded
+            strength. Growing up in poverty, she navigated her youth in
+            survival mode, shouldering responsibilities well beyond her
+            years. At 16, her family immigrated to Canada. She worked
+            full-time while attending college at night. Her youth was
+            resilience defined.
+          </p>
+          <button class="btn btn-secondary rounded-pill py-3 px-5 mb-3" onclick="goToNextSection('survival')">
+            Next Chapter
+          </button>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+          <img src="img/survival.jpg" class="img-fluid custom-img-responsive" alt="Survival" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hustle" style="display: none" class="py-5">
+    <div class="row align-items-center flex-column-reverse flex-md-row">
+      <div class="col-md-6 text-center text-md-start">
+        <h3>Creating a Beautiful Cage</h3>
+        <p>
+          By 22, Amrita was married. By 26, she had two children and a life
+          of material stability. Yet beneath the surface, she felt a deep
+          ache. She built a business — CurveAppeal Personal Training — and
+          coached thousands. But she was pouring from an empty cup.
         </p>
-        <h2 id="main-heading" class="mb-3">Childhood of Survival</h2>
+        <button class="btn btn-secondary rounded-pill py-3 px-5 mb-3" onclick="goToNextSection('hustle')">
+          Next Chapter
+        </button>
       </div>
-
-      <!-- Timeline container -->
-      <div class="position-relative my-5 timeline-wrapper ">
-        <div class="timeline-line mx-auto"></div>
-
-        <div
-          class="d-flex justify-content-between flex-wrap position-relative z-1 px-2"
-        >
-          <div
-            class="timeline-step active text-center"
-            onclick="changeSection('survival')"
-          >
-            <div class="circle mx-auto">1</div>
-            <div class="label" id="survival-label">Survival</div>
-          </div>
-
-          <div
-            class="timeline-step text-center"
-            onclick="changeSection('hustle')"
-          >
-            <div class="circle mx-auto">2</div>
-            <div class="label" id="hustle-label">Hustle</div>
-          </div>
-
-          <div
-            class="timeline-step text-center"
-            onclick="changeSection('breaking')"
-          >
-            <div class="circle mx-auto">3</div>
-            <div class="label" id="breaking-label">Breaking</div>
-          </div>
-
-          <div
-            class="timeline-step text-center"
-            onclick="changeSection('awakening')"
-          >
-            <div class="circle mx-auto">4</div>
-            <div class="label" id="awakening-label">Awakening</div>
-          </div>
-
-          <div
-            class="timeline-step text-center"
-            onclick="changeSection('rebirth')"
-          >
-            <div class="circle mx-auto">5</div>
-            <div class="label" id="rebirth-label">Rebirth</div>
-          </div>
-        </div>
+      <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+        <img src="img/hustle.jpg" class="section-image custom-img-responsive" alt="Hustle" />
       </div>
     </div>
+  </section>
 
-    <div class="container timeline-text-section mb-5 ">
-      <section id="survival" class="py-5">
-        <div class="container">
-          <div class="row align-items-center flex-column-reverse flex-md-row">
-            <!-- Text Column -->
-            <div class="col-md-6 text-center text-md-start">
-              <h3 class="mb-3">Childhood of Survival</h3>
-              <p>
-                Amrita was born in South America, into a life that demanded
-                strength. Growing up in poverty, she navigated her youth in
-                survival mode, shouldering responsibilities well beyond her
-                years. At 16, her family immigrated to Canada. She worked
-                full-time while attending college at night. Her youth was
-                resilience defined.
-              </p>
-            </div>
+  <section id="breaking" style="display: none" class="py-5">
+    <div class="row align-items-center">
 
-            <!-- Image Column -->
+      <div class="col-md-6 text-center text-md-start">
+        <h3>When It All Fell Apart</h3>
+        <p>
+          The pandemic crushed her business. Then she lost her sister,
+          niece, and father. Her world collapsed. For the first time, she
+          had nothing left — but in that void, a whisper rose: “This is not
+          the end. This is the beginning.”
+        </p>
+
+        <button class="btn btn-secondary rounded-pill py-3 px-5 mb-3" onclick="goToNextSection('breaking')">
+          Next Chapter
+        </button>
+        
+      </div>
             <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-              <img
-                src="img/survival.jpg"
-                class="img-fluid custom-img-responsive"
-                alt="Survival"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="hustle" style="display: none" class="py-5">
-        <div class="row align-items-center flex-column-reverse flex-md-row">
-          <div class="col-md-6 text-center text-md-start">
-            <h3>Creating a Beautiful Cage</h3>
-            <p>
-              By 22, Amrita was married. By 26, she had two children and a life
-              of material stability. Yet beneath the surface, she felt a deep
-              ache. She built a business — CurveAppeal Personal Training — and
-              coached thousands. But she was pouring from an empty cup.
-            </p>
-          </div>
-          <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-            <img
-              src="img/hustle.jpg"
-              class="section-image custom-img-responsive"
-              alt="Hustle"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id="breaking" style="display: none" class="py-5">
-        <div class="row align-items-center">
-          <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-            <img
-              src="img/break.jpg"
-              class="section-image custom-img-responsive"
-              alt="Breaking"
-            />
-          </div>
-          <div class="col-md-6 text-center text-md-start">
-            <h3>When It All Fell Apart</h3>
-            <p>
-              The pandemic crushed her business. Then she lost her sister,
-              niece, and father. Her world collapsed. For the first time, she
-              had nothing left — but in that void, a whisper rose: “This is not
-              the end. This is the beginning.”
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="awakening" style="display: none" class="py-5">
-        <div class="row align-items-center flex-column-reverse flex-md-row">
-          <div class="col-md-6 text-center text-md-start">
-            <h3>From Grind to Grace</h3>
-            <p>
-              At 47, Amrita left Canada with just a carry-on. Her journey took
-              her through Thailand, Bali, and India — through yoga, silence,
-              grief, and awakening. Each place stripped layers away until only
-              her soul remained, raw and real.
-            </p>
-          </div>
-          <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-            <img
-              src="img/awakening.jpg"
-              class="section-image custom-img-responsive"
-              alt="Awakening"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id="rebirth" style="display: none" class="py-5 " >
-        <div class="row align-items-center">
-          <div class="col-md-6 d-flex justify-content-center  mb-md-0">
-            <img
-              src="img/rebirth.jpg"
-              class="section-image custom-img-responsive"
-              alt="Rebirth"
-            />
-          </div>
-          <div class="col-md-6 text-center text-md-center text-md-start">
-            <h3>The Birth of AmritaSoulPath</h3>
-            <p>
-              In Rishikesh, she completed over 500 hours of yogic training. What
-              emerged wasn’t a business — it was remembrance. Now she guides
-              others through retreats, coaching, meditation, and sacred healing,
-              walking beside them on their own soul paths.
-            </p>
-          </div>
-        </div>
-      </section>
+        <img src="img/break.jpg" class="section-image custom-img-responsive" alt="Breaking" />
+      </div>
     </div>
-    <!-- timeline end  -->
+  </section>
+
+  <section id="awakening" style="display: none" class="py-5">
+    <div class="row align-items-center flex-column-reverse flex-md-row">
+      <div class="col-md-6 text-center text-md-start">
+        <h3>From Grind to Grace</h3>
+        <p>
+          At 47, Amrita left Canada with just a carry-on. Her journey took
+          her through Thailand, Bali, and India — through yoga, silence,
+          grief, and awakening. Each place stripped layers away until only
+          her soul remained, raw and real.
+        </p>
+        <button class="btn btn-secondary rounded-pill py-3 px-5 mb-3" onclick="goToNextSection('awakening')">
+          Next Chapter
+        </button>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center mb-4  mb-md-0">
+        <img src="img/awakening.jpg" class="section-image custom-img-responsive" alt="Awakening" />
+      </div>
+    </div>
+  </section>
+
+  <section id="rebirth" style="display: none" class="py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 d-flex justify-content-center mb-md-0">
+        <img src="img/rebirth.jpg" class="section-image custom-img-responsive" alt="Rebirth" />
+      </div>
+      <div class="col-md-6 text-center text-md-start">
+        <h3>The Birth of AmritaSoulPath</h3>
+        <p>
+          In Rishikesh, she completed over 500 hours of yogic training. What
+          emerged wasn’t a business — it was remembrance. Now she guides
+          others through retreats, coaching, meditation, and sacred healing,
+          walking beside them on their own soul paths.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- timeline end -->
 
     <!-- parallax start  -->
     <div
@@ -783,38 +758,51 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- custom script -->
-    <script>
-      const sections = [
-        "survival",
-        "hustle",
-        "breaking",
-        "awakening",
-        "rebirth",
-      ];
-      const headings = {
-        survival: "Childhood of Survival",
-        hustle: "Creating a Beautiful Cage",
-        breaking: "When It All Fell Apart",
-        awakening: "From Grind to Grace",
-        rebirth: "The Birth of AmritaSoulPath",
-      };
+<script>
+  const sections = ["survival", "hustle", "breaking", "awakening", "rebirth"];
 
-      function changeSection(id) {
-        sections.forEach((sec) => {
-          document.getElementById(sec).style.display =
-            sec === id ? "block" : "none";
-        });
+  const headings = {
+    survival: "Childhood of Survival",
+    hustle: "Creating a Beautiful Cage",
+    breaking: "When It All Fell Apart",
+    awakening: "From Grind to Grace",
+    rebirth: "The Birth of AmritaSoulPath",
+  };
 
-        document.getElementById("main-heading").innerText = headings[id];
+  function changeSection(id, clickedElement = null) {
+    sections.forEach((sec) => {
+      document.getElementById(sec).style.display = sec === id ? "block" : "none";
+    });
 
-        document
-          .querySelectorAll(".timeline-step")
-          .forEach((el) => el.classList.remove("active"));
-        event.currentTarget.classList.add("active");
+    document.getElementById("timeline-main-heading").innerText = headings[id];
+
+    document.querySelectorAll(".timeline-step").forEach((el) =>
+      el.classList.remove("active")
+    );
+
+    if (clickedElement) {
+      clickedElement.classList.add("active");
+    } else {
+      const stepIndex = sections.indexOf(id);
+      if (stepIndex !== -1) {
+        document.querySelectorAll(".timeline-step")[stepIndex].classList.add("active");
       }
-    </script>
+    }
+  }
 
-    <!-- Template Javascript -->
+  function goToNextSection(currentId) {
+    const index = sections.indexOf(currentId);
+    if (index !== -1 && index + 1 < sections.length) {
+      const nextId = sections[index + 1];
+      changeSection(nextId);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    changeSection("survival");
+  });
+</script>
+<!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
 </html>
