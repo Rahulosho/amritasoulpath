@@ -712,5 +712,12 @@
 
 /*** about page end ***/
 
-
+/*** Contact ***/
+    .logo-circle {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+        /* contact page end */
 
