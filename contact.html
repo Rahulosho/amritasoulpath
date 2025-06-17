@@ -137,169 +137,169 @@
 
     <!-- main sectionstart  -->
 
-    <!-- Parallax Form Background -->
+<!-- Parallax Form Background -->
+<div
+  class="container-fluid py-5"
+  data-parallax="scroll"
+  data-image-src="img/form-background.jpg"
+>
+  <div class="row justify-content-center py-5">
     <div
-      class="container-fluid py-5"
-      data-parallax="scroll"
-      data-image-src="img/form-background.jpg"
+      class="col-lg-8 p-4 shadow rounded"
+      style="background-color: rgba(255, 255, 255, 0.85)"
     >
-      <div class="row justify-content-center py-5">
-        <div
-          class="col-lg-8 p-4 shadow rounded"
-          style="background-color: rgba(255, 255, 255, 0.85)"
-        >
-          <!-- Logo -->
-          <img src="img/logo-no-bg.png" alt="Logo" class="logo-circle mb-4" />
+      <!-- Logo -->
+      <img src="img/logo-no-bg.png" alt="Logo" class="logo-circle mb-4" />
 
-          <!-- Intro Text -->
-          <h3 class="text-center fw-bold">
-            Please fill out this form to enroll
-          </h3>
-          <p class="text-center text-muted mb-4">
-            Namaste! We are excited to welcome you. Fill in the details below to
-            begin your journey.
-          </p>
+      <!-- Intro Text -->
+      <h3 class="text-center fw-bold">Please fill out this form to enroll</h3>
+      <p class="text-center text-muted mb-4">
+        Namaste! We are excited to welcome you. Fill in the details below to
+        begin your journey.
+      </p>
 
-          <!-- ✅ StaticForms Integrated Form -->
-          <form
-            id="enrollmentForm"
-            action="https://api.staticforms.xyz/submit"
-            method="POST"
-            novalidate
-          >
-            <!-- StaticForms Hidden Fields -->
-            <input
-              type="hidden"
-              name="apiKey"
-              value="sf_lc2l01ia6gb55375egdb10nh"
-            />
-            <input type="hidden" name="replyTo" value="@" />
-            <input type="hidden" name="redirectTo" value="" />
+      <!-- ✅ StaticForms Integrated Form -->
+      <form
+        id="enrollmentForm"
+        action="https://api.staticforms.xyz/submit"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="showThankYou(); return true;"
+        novalidate
+      >
+        <!-- StaticForms Hidden Fields -->
+        <input
+          type="hidden"
+          name="apiKey"
+          value="sf_lc2l01ia6gb55375egdb10nh"
+        />
+        <input type="hidden" name="replyTo" value="@" />
+        <input type="hidden" name="redirectTo" value="" />
+        <input
+          type="text"
+          name="honeypot"
+          style="display: none"
+          tabindex="-1"
+          autocomplete="off"
+        />
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label"
+              >Name <span class="text-danger">*</span></label
+            >
             <input
               type="text"
-              name="honeypot"
-              style="display: none"
-              tabindex="-1"
-              autocomplete="off"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
             />
-
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label for="name" class="form-label"
-                  >Name <span class="text-danger">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="last-name" class="form-label">Last Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="last-name"
-                  name="$lastName"
-                  placeholder="Your last name"
-                />
-              </div>
-            </div>
-
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label for="phone" class="form-label"
-                  >Phone Number <span class="text-danger">*</span></label
-                >
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                  name="$phone"
-                  placeholder="12345..."
-                  required
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="country" class="form-label"
-                  >Country <span class="text-danger">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="country"
-                  name="$country"
-                  placeholder="Your country"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label"
-                >Email Address <span class="text-danger">*</span></label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="you@example.com"
-                required
-              />
-            </div>
-
-            <div class="mb-3">
-              <label for="gender" class="form-label">Gender</label>
-              <select class="form-select" id="gender" name="$gender">
-                <option selected disabled>Choose gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-                <option value="prefer_not_say">Prefer not to say</option>
-              </select>
-            </div>
-
-            <div class="text-center py-5">
-              <button type="submit" class="btn btn-primary px-5">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!-- ✅ Thank You Modal -->
-    <div
-      class="modal fade"
-      id="thankYouModal"
-      tabindex="-1"
-      aria-labelledby="thankYouModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center">
-          <div class="modal-header border-0">
-            <h5 class="modal-title w-100" id="thankYouModalLabel">
-              🎉 Thank You!
-            </h5>
           </div>
-          <div class="modal-body">
-            <p>Your form has been submitted successfully.</p>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
+          <div class="col-md-6">
+            <label for="last-name" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              name="$lastName"
+              placeholder="Your last name"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="phone" class="form-label"
+              >Phone Number <span class="text-danger">*</span></label
             >
-              OK
-            </button>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="$phone"
+              placeholder="12345..."
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="country" class="form-label"
+              >Country <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="country"
+              name="$country"
+              placeholder="Your country"
+              required
+            />
           </div>
         </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label"
+            >Email Address <span class="text-danger">*</span></label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" id="gender" name="$gender">
+            <option selected disabled>Choose gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="prefer_not_say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div class="text-center py-5">
+          <button type="submit" class="btn btn-primary px-5">Submit</button>
+        </div>
+      </form>
+
+      <!-- Hidden iframe to prevent redirect -->
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Thank You Modal -->
+<div
+  class="modal fade"
+  id="thankYouModal"
+  tabindex="-1"
+  aria-labelledby="thankYouModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header border-0">
+        <h5 class="modal-title w-100" id="thankYouModalLabel">🎉 Thank You!</h5>
+      </div>
+      <div class="modal-body">
+        <p>Your form has been submitted successfully.</p>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-dismiss="modal"
+        >
+          OK
+        </button>
       </div>
     </div>
-
+  </div>
+</div>
     <!-- main section end  -->
 
     <!-- Footer Start -->
@@ -431,22 +431,23 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- ✅ JavaScript to show modal & reset form -->
-    <script>
-      document
-        .getElementById("enrollmentForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault(); // Prevent default form submission
+<script>
+  function showThankYou() {
+    setTimeout(function () {
+      // Show modal (Bootstrap 5)
+      var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+      thankYouModal.show();
 
-          // Simulate success and show modal
-          const modal = new bootstrap.Modal(
-            document.getElementById("thankYouModal")
-          );
-          modal.show();
+      // Reset form
+      document.getElementById('enrollmentForm').reset();
 
-          // Reset form fields
-          this.reset();
-        });
-    </script>
+      // Reset reCAPTCHA if used
+      if (typeof grecaptcha !== 'undefined') {
+        grecaptcha.reset();
+      }
+    }, 1500); // wait for StaticForms to process
+  }
+</script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
