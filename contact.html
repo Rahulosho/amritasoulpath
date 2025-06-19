@@ -159,114 +159,96 @@
       </p>
 
       <!-- ✅ StaticForms Integrated Form -->
-      <form
-        id="enrollmentForm"
-        action="https://api.staticforms.xyz/submit"
-        method="POST"
-        target="hidden_iframe"
-        onsubmit="showThankYou(); return true;"
-        novalidate
-      >
-        <!-- StaticForms Hidden Fields -->
-        <input
-          type="hidden"
-          name="apiKey"
-          value="sf_lc2l01ia6gb55375egdb10nh"
-        />
-        <input type="hidden" name="replyTo" value="@" />
-        <input type="hidden" name="redirectTo" value="" />
-        <input
-          type="text"
-          name="honeypot"
-          style="display: none"
-          tabindex="-1"
-          autocomplete="off"
-        />
+<form
+  id="enrollmentForm"
+  action="https://api.staticforms.xyz/submit"
+  method="POST"
+  target="hidden_iframe"
+  onsubmit="showThankYou(); return true;"
+  novalidate
+>
+  <!-- StaticForms Hidden Fields -->
+  <input
+    type="hidden"
+    name="apiKey"
+    value="sf_lc2l01ia6gb55375egdb10nh"
+  />
+  <input type="hidden" name="replyTo" value="@" />
+  <input type="hidden" name="redirectTo" value="" />
+  <input
+    type="text"
+    name="honeypot"
+    style="display: none"
+    tabindex="-1"
+    autocomplete="off"
+  />
 
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="name" class="form-label"
-              >Name <span class="text-danger">*</span></label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="name"
-              placeholder="Your name"
-              required
-            />
-          </div>
-          <div class="col-md-6">
-            <label for="last-name" class="form-label">Last Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="last-name"
-              name="$lastName"
-              placeholder="Your last name"
-            />
-          </div>
-        </div>
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required />
+    </div>
+    <div class="col-md-6">
+      <label for="last-name" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="last-name" name="$lastName" placeholder="Your last name" />
+    </div>
+  </div>
 
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="phone" class="form-label"
-              >Phone Number <span class="text-danger">*</span></label
-            >
-            <input
-              type="tel"
-              class="form-control"
-              id="phone"
-              name="$phone"
-              placeholder="12345..."
-              required
-            />
-          </div>
-          <div class="col-md-6">
-            <label for="country" class="form-label"
-              >Country <span class="text-danger">*</span></label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="country"
-              name="$country"
-              placeholder="Your country"
-              required
-            />
-          </div>
-        </div>
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+      <input type="tel" class="form-control" id="phone" name="$phone" placeholder="12345..." required />
+    </div>
+    <div class="col-md-6">
+      <label for="country" class="form-label">Country <span class="text-danger">*</span></label>
+      <input type="text" class="form-control" id="country" name="$country" placeholder="Your country" required />
+    </div>
+  </div>
 
-        <div class="mb-3">
-          <label for="email" class="form-label"
-            >Email Address <span class="text-danger">*</span></label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="email"
-            placeholder="you@example.com"
-            required
-          />
-        </div>
+  <div class="row mb-3">
+<div class="col-md-6">
+  <label for="dob" class="form-label" >Date of Birth<span class="text-danger">*</span></label>
+  <input
+    type="text"
+    class="form-control"
+    id="dob"
+    name="$dateOfBirth"
+    placeholder="mm-dd-yyyy"
+    required
+  />
+</div>
+    <div class="col-md-6">
+      <label for="gender" class="form-label">Gender</label>
+      <select class="form-select" id="gender" name="$gender">
+        <option selected disabled>Choose gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select>
+    </div>
+  </div>
 
-        <div class="mb-3">
-          <label for="gender" class="form-label">Gender</label>
-          <select class="form-select" id="gender" name="$gender">
-            <option selected disabled>Choose gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-            <option value="prefer_not_say">Prefer not to say</option>
-          </select>
-        </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required />
+  </div>
 
-        <div class="text-center py-5">
-          <button type="submit" class="btn btn-primary px-5">Submit</button>
-        </div>
-      </form>
+  <div class="mb-3">
+    <label for="service" class="form-label" >Service Interested In<span class="text-danger">*</span></label>
+    <select class="form-select" id="service" name="$service" required>
+      <option selected disabled>Select a service</option>
+      <option value="remember_her_retreat">Remember Her Retreat</option>
+      <option value="single_session">Single Session – Intuitive Coaching</option>
+      <option value="3_session">3-Session Package</option>
+      <option value="6_session">6-Session Journey</option>
+    </select>
+  </div>
+
+  <div class="text-center py-5">
+    <button type="submit" class="btn btn-primary px-5">Submit</button>
+  </div>
+</form>
 
       <!-- Hidden iframe to prevent redirect -->
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
@@ -448,6 +430,30 @@
     }, 1500); // wait for StaticForms to process
   }
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dobInput = document.getElementById('dob');
+
+    // Show native datepicker on focus if supported
+    dobInput.addEventListener('focus', function () {
+      if (!dobInput.type || dobInput.type === 'text') {
+        try {
+          dobInput.type = 'date';
+        } catch (e) {
+          // fallback for unsupported browsers
+        }
+      }
+    });
+
+    // Allow typing by reverting to text on blur
+    dobInput.addEventListener('blur', function () {
+      if (!dobInput.value) {
+        dobInput.type = 'text';
+      }
+    });
+  });
+</script>
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
