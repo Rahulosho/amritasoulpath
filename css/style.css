@@ -737,3 +737,21 @@
         /* contact page end */
 
 
+/* book section */
+.card-img-top {
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.book-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow */
+  border-radius: 8px;
+}
+
+.book-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35); /* More depth on hover */
+}
