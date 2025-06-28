@@ -418,42 +418,12 @@ body {
 
 
 /* gallery */
-    .custom-gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .custom-image {
-      padding: 15px;
-    }
-
-    /* Small device adjustments */
-    @media (max-width: 768px) {
-      .custom-image {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-
-      .custom-gallery img {
-        max-height: 300px;
-        object-fit: cover;
-      }
-    }
-
-    .custom-gallery-hidden {
-      display: none;
-    }
-
-    .view-more-btn {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 30px;
-      font-weight: bold;
-      border-radius: 30px;
-    }
+.custom-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
 /* gallery end */
 

@@ -62,17 +62,3 @@
 
 // gallery
 
-const viewMoreBtn = document.getElementById('viewMoreBtn');
-const hiddenImages = document.querySelectorAll('.custom-gallery-hidden');
-
-viewMoreBtn.addEventListener('click', () => {
-  let anyVisible = false;
-
-  hiddenImages.forEach(img => {
-    const isHidden = window.getComputedStyle(img).display === 'none';
-    img.style.display = isHidden ? 'block' : 'none';
-    if (!isHidden) anyVisible = true;
-  });
-
-  viewMoreBtn.textContent = anyVisible ? 'View More' : 'Show Less';
-});

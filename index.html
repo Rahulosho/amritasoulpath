@@ -10,48 +10,28 @@
     <!-- Favicon -->
     <link href="img/logo-sm.jpg" rel="icon" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-      rel="stylesheet"
-    />
+<!-- ✅ Google Fonts (critical) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+<!-- ✅ Font Awesome (critical if icons are in header/nav) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
 
+<!-- ⏬ Bootstrap Icons (non-critical) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all';" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+<!-- ⏬ Non-critical Library CSS -->
+<link href="lib/animate/animate.min.css" rel="stylesheet" media="print" onload="this.media='all';" />
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" media="print" onload="this.media='all';" />
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" media="print" onload="this.media='all';" />
+<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" media="print" onload="this.media='all';" />
+<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" media="print" onload="this.media='all';" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="theme.css" />
+<!-- ✅ Core Bootstrap & Your Theme (critical) -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="theme.css" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
@@ -154,6 +134,7 @@
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <img
+            loading="lazy"
               class="w-100"
               src="https://res.cloudinary.com/dhgnhwlws/image/upload/v1751038920/carousel-1_vptqqh.jpg"
               alt="Image"
@@ -183,7 +164,7 @@
 
           <!-- Slide 2 -->
           <div class="carousel-item">
-            <img
+            <img loading="lazy"
               class="w-100"
               src="https://res.cloudinary.com/dhgnhwlws/image/upload/v1751039045/carousel-2_rfqtxp.jpg"
               alt="Image"
@@ -286,13 +267,13 @@
             <div class="col-md-6">
               <picture>
                 <!-- Mobile image -->
-                <source
-                  srcset="img/budhha-mobile-2.jpg"
+                <source 
+                  srcset="img/buddha-mobile.jpg"
                   media="(max-width: 767px)"
                 />
                 <!-- Desktop image -->
                 <source srcset="img/buddha.jpg" media="(min-width: 768px)" />
-                <img
+                <img 
                   src="img/buddha.jpg"
                   alt="Retreat in Bali"
                   class="img-fluid h-100 w-100 object-fit-cover rounded-start-4"
@@ -398,13 +379,13 @@
                 </div>
               </div>
               <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
-                <img class="img-fluid rounded" src="img/service-1.jpg" />
+                <img loading="lazy" class="img-fluid rounded" src="img/service-1.jpg" />
               </div>
               <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                <img class="img-fluid rounded" src="img/service-2.jpg" />
+                <img loading="lazy" class="img-fluid rounded" src="img/service-2.jpg" />
               </div>
               <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
-                <img class="img-fluid rounded" src="img/portrait.jpg" />
+                <img loading="lazy" class="img-fluid rounded" src="img/portrait.jpg" />
               </div>
             </div>
           </div>
@@ -428,7 +409,7 @@
             </p>
             <div class="row g-5 pt-2 mb-5">
               <div class="col-sm-6">
-                <img class="img-fluid mb-4" src="img/service.png" alt="" />
+                <img loading="lazy" class="img-fluid mb-4" src="img/service.png" alt="" />
                 <h5 class="mb-3">Embodied Wisdom</h5>
                 <span
                   >Years of lived experience in sacred spaces, beyond
@@ -436,7 +417,7 @@
                 >
               </div>
               <div class="col-sm-6">
-                <img class="img-fluid mb-4" src="img/lotus.png" alt="" />
+                <img loading="lazy" class="img-fluid mb-4" src="img/lotus.png" alt="" />
                 <h5 class="mb-3">Heart-Led Holding</h5>
                 <span
                   >You’re not just guided. you’re seen, felt, and deeply
@@ -490,7 +471,7 @@
           </div>
           <div class="col-lg-6">
             <div class="rounded overflow-hidden shadow-sm">
-              <img
+              <img loading="lazy"
                 src="img/whoite-soul.jpg"
                 alt="Intuitive Coaching"
                 class="img-fluid w-100 rounded-4"
@@ -514,7 +495,7 @@
       >
         <!-- Left Image Column -->
         <div class="col-md-6">
-          <img
+          <img loading="lazy"
             src="img/intiuative.jpg"
             alt="Intuitive Coaching"
             class="img-fluid w-100 h-100 object-fit-cover"
@@ -749,11 +730,11 @@
           >
             <div class="service-item d-flex h-100">
               <div class="service-img">
-                <img class="img-fluid" src="img/service-1.jpg" alt="" />
+                <img loading="lazy" class="img-fluid" src="img/service-1.jpg" alt="" />
               </div>
               <div class="service-text p-5 pt-0">
                 <div class="service-icon">
-                  <img
+                  <img loading="lazy"
                     class="img-fluid rounded-circle"
                     src="img/service-1.jpg"
                     alt=""
@@ -782,11 +763,11 @@
           >
             <div class="service-item d-flex h-100">
               <div class="service-img">
-                <img class="img-fluid" src="img/3-session.jpg" alt="" />
+                <img  loading="lazy" class="img-fluid" src="img/3-session.jpg" alt="" />
               </div>
               <div class="service-text p-5 pt-0">
                 <div class="service-icon">
-                  <img
+                  <img loading="lazy"
                     class="img-fluid rounded-circle"
                     src="img/3-session.jpg"
                     alt=""
@@ -815,11 +796,11 @@
           >
             <div class="service-item d-flex h-100">
               <div class="service-img">
-                <img class="img-fluid" src="img/session-6.jpg" alt="" />
+                <img loading="lazy" class="img-fluid" src="img/session-6.jpg" alt="" />
               </div>
               <div class="service-text p-5 pt-0">
                 <div class="service-icon">
-                  <img
+                  <img loading="lazy"
                     class="img-fluid rounded-circle"
                     src="img/session-6.jpg"
                     alt=""
@@ -1143,7 +1124,7 @@
         <!-- Card 1 -->
         <div class="col-12 col-md-6 col-lg-6">
           <div class="card h-100 shadow-sm">
-            <img
+            <img loading="lazy"
               src="img/meditation-session.jpg"
               class="card-img-top img-fluid"
               alt="Meditation"
@@ -1164,7 +1145,7 @@
         <!-- Card 2 -->
         <div class="col-12 col-md-6 col-lg-6">
           <div class="card h-100 shadow-sm">
-            <img
+            <img loading="lazy"
               src="img/yoga-session.jpg"
               class="card-img-top img-fluid"
               alt="Yoga"
@@ -1185,7 +1166,7 @@
         <!-- Card 3 -->
         <div class="col-12 col-md-6 col-lg-6">
           <div class="card h-100 shadow-sm">
-            <img
+            <img loading="lazy"
               src="img/nutrition.jpg"
               class="card-img-top img-fluid"
               alt="Nutrition Plan"
@@ -1206,7 +1187,7 @@
         <!-- Card 4 -->
         <div class="col-12 col-md-6 col-lg-6">
           <div class="card h-100 shadow-sm">
-            <img
+            <img loading="lazy"
               src="img/gym-eqip.jpg"
               class="card-img-top img-fluid"
               alt="Empowered Training"
@@ -1251,138 +1232,187 @@
     <!-- my promise section end-->
 
     <!-- e-book section -->
-    <section class="py-5 mb-5 section-with-shapes">
-      <!-- Decorative Shapes -->
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
+<!-- Add Bootstrap Icons (if not already included) -->
 
-      <div class="container">
-        <div class="row flex-lg-row flex-column" style="min-height: 100%">
-          <!-- Left Section -->
-          <div
-            class="col-lg-4 d-flex flex-column justify-content-center text-center mb-4 mb-lg-0"
-            style="min-height: 100%"
-          >
-            <div>
-              <h2 class="fw-bold">Featured Reads</h2>
-              <p class="text-muted">
-                Explore powerful stories and transformative guides — your next
-                favorite book awaits.
+<section class="py-5 mb-5 section-with-shapes">
+  <!-- Decorative Shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+
+  <div class="container">
+    <div class="row flex-lg-row flex-column" style="min-height: 100%">
+      <!-- Left Section -->
+      <div
+        class="col-lg-4 d-flex flex-column justify-content-center mb-4 mb-lg-0 text-center text-lg-start"
+      >
+        <div>
+          <h2 class="fw-bold">Books by Me</h2>
+          <p class="text-muted">
+            Dive into hand-crafted guides and insightful reflections written from my personal journey. Whether you're seeking travel inspiration or inner transformation, these reads are designed to move you.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Section: Books -->
+      <div class="col-lg-8">
+        <div class="row g-4 justify-content-between text-center">
+          <!-- Book 1 -->
+          <div class="col-12 col-md-6">
+            <a href="https://buy.stripe.com/00weVf4vz4M3dIS5UWgEg00" class="text-decoration-none text-dark">
+              <div class="card border-0 book-hover overflow-hidden">
+                <img loading="lazy"
+                  src="img/travel-e-guide.jpg"
+                  class="card-img-top book-img"
+                  alt="E-Travel Guide"
+                />
+              </div>
+            </a>
+            <div class="p-3 rounded-bottom">
+              <h5 class="mb-1">
+                <a
+                  href="https://buy.stripe.com/00weVf4vz4M3dIS5UWgEg00"
+                  class="text-decoration-none text-dark"
+                  >E-Travel Guide</a
+                >
+              </h5>
+              <p class="card-text small mb-2">
+                A guide to discovering Middle Asia.
               </p>
-            </div>
-            <div class="mt-4 ">
-              <a href="#contact" class="btn btn-primary px-4 py-2"
-                >Contact Us to Get the Books</a
-              >
+              <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <a href="https://buy.stripe.com/00weVf4vz4M3dIS5UWgEg00" class="btn btn-outline-dark btn-sm">Buy for $12</a>
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#book1Modal">
+                  More Info
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Right Section: Books -->
-          <div class="col-lg-8">
-            <div class="row g-4 justify-content-between text-center">
-              <!-- Book 1 -->
-              <div class="col-6 col-md-6 col-lg-6">
-                <a href="#contact" class="text-decoration-none text-dark">
-                  <div class="card border-0 book-hover overflow-hidden">
-                    <img
-                      src="img/travel-e-guide.jpg"
-                      class="card-img-top book-img"
-                      alt="E-Travel Guide"
-                    />
-                  </div>
-                </a>
-                <div class="p-3 rounded-bottom d-none d-md-block">
-                  <h5 class="mb-1">
-                    <a
-                      href="https://buy.stripe.com/00weVf4vz4M3dIS5UWgEg00"
-                      class="text-decoration-none text-dark"
-                      >E-Travel Guide</a
-                    >
-                  </h5>
-                  <p class="card-text small mb-0">
-                    A guide to discovering South East Asia.
-                  </p>
-                </div>
+          <!-- Book 2 -->
+          <div class="col-12 col-md-6">
+            <a href="https://buy.stripe.com/4gMeVfbY12DV34ecjkgEg03" class="text-decoration-none text-dark">
+              <div class="card border-0 book-hover overflow-hidden">
+                <img loading="lazy"
+                  src="img/re-wire.jpg"
+                  class="card-img-top book-img"
+                  alt="Rewiring Your Brain"
+                />
               </div>
-
-              <!-- Book 2 -->
-              <div class="col-6 col-md-6 col-lg-6">
-                <a href="https://buy.stripe.com/4gMeVfbY12DV34ecjkgEg03" class="text-decoration-none text-dark">
-                  <div class="card border-0 book-hover overflow-hidden">
-                    <img
-                      src="img/re-wire.jpg"
-                      class="card-img-top book-img"
-                      alt="Rewiring Your Brain"
-                    />
-                  </div>
-                </a>
-                <div class="p-3 rounded-bottom d-none d-md-block">
-                  <h5 class="mb-1">
-                    <a href="https://buy.stripe.com/4gMeVfbY12DV34ecjkgEg03" class="text-decoration-none text-dark"
-                      >Rewiring Your Brain</a
-                    >
-                  </h5>
-                  <p class="card-text small mb-0">
-                    Transformative techniques for inner growth.
-                  </p>
-                </div>
+            </a>
+            <div class="p-3 rounded-bottom">
+              <h5 class="mb-1">
+                <a href="https://buy.stripe.com/4gMeVfbY12DV34ecjkgEg03" class="text-decoration-none text-dark"
+                  >Rewire Your Nervous system</a
+                >
+              </h5>
+              <p class="card-text small mb-2">
+                30 Days self love journal to rewire your brain. 
+              </p>
+              <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <a href="https://buy.stripe.com/4gMeVfbY12DV34ecjkgEg03" class="btn btn-outline-dark btn-sm">Buy for $13.33</a>
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#book2Modal">
+                  More Info
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <!-- Book 1 Modal -->
+  <div class="modal  fade" id="book1Modal" tabindex="-1" aria-labelledby="book1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content  border-0 rounded-4 p-4">
+        <div class="modal-body ">
+          <div class="text-center mb-4">
+            <div class="bg-warning-subtle rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 56px; height: 56px">
+              <i class="bi bi-compass fs-4 text-dark"></i>
+            </div>
+            <h4 class="fw-bold mb-2 text-dark" id="book1ModalLabel">E-Travel Guide</h4>
+            <p class="text-muted mb-0">
+              An immersive digital travel guide crafted from my journeys across Middle Asia. Ideal for solo adventurers, culture seekers, and mindful wanderers.
+            </p>
+          </div>
+          <div class="row mt-4 text-dark small">
+            <div class="col-md-6 mb-3">
+              <div class="d-flex mb-3"><span><strong>Includes tips</strong> from Thailand, Laos, Vietnam</span></div>
+              <div class="d-flex"><span><strong>Great for beginners</strong> & solo travelers</span></div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex mb-3"><span><strong>PDF format</strong>, access anytime</span></div>
+              <div class="d-flex"><span><strong>Price:</strong> $12</span></div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="https://buy.stripe.com/00weVf4vz4M3dIS5UWgEg00" class="btn btn-warning text-dark px-5 my-3 me-2">Buy Now</a>
+            <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Book 2 Modal -->
+  <div class="modal fade" id="book2Modal" tabindex="-1" aria-labelledby="book2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 rounded-4 p-4">
+        <div class="modal-body">
+          <div class="text-center mb-4">
+            <div class="bg-warning-subtle rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 56px; height: 56px">
+              <i class="bi bi-journal-text fs-4 text-dark"></i>
+            </div>
+            <h4 class="fw-bold mb-2 text-dark" id="book2ModalLabel">Rewiring Your Brain</h4>
+            <p class="text-muted mb-0">
+              This short ebook guides you through practical and proven tools to help reshape thought patterns, build emotional resilience, and support long-term growth.
+            </p>
+          </div>
+          <div class="row mt-4 text-dark small">
+            <div class="col-md-6 mb-3">
+              <div class="d-flex mb-3"><span><strong>Science-backed</strong> techniques</span></div>
+              <div class="d-flex"><span><strong>Self-reflection</strong> & daily practices</span></div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex mb-3"><span><strong>PDF format</strong> acess anytime</span></div>
+              <div class="d-flex"><span><strong>Price:</strong> $13.33</span></div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="https://buy.stripe.com/4gMeVfbY12DV34ecjkgEg03" class="btn btn-warning text-dark px-5 my-3 me-2">Buy Now</a>
+            <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- e-book section end -->
 
     <!-- Gallery Start -->
-    <div class="container-fluid custom-gallery mb-4">
-      <div
-        class="text-center mx-auto pb-4 wow fadeInUp"
-        data-wow-delay="0.1s"
-        style="max-width: 500px"
-      >
-        <p class="section-title bg-white text-center text-primary px-3">
-          Our Gallery
-        </p>
-        <h1 class="mb-5">A Visual Journey</h1>
-      </div>
+<div class="container-fluid custom-gallery mb-4">
+  <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+    <p class="section-title bg-white text-center text-primary px-3">
+      Our Gallery
+    </p>
+    <h1 class="mb-5">A Visual Journey</h1>
+  </div>
 
-      <div class="row">
-        <!-- Always visible -->
-        <div class="col-md-3 col-12 custom-image">
-          <img src="img/gallery/gallery-1.jpg" alt="Image 1" />
-        </div>
-        <div class="col-md-3 col-12 custom-image">
-          <img src="img/gallery/gallery-8.jpg" alt="Image 2" />
-        </div>
-        <div class="col-md-3 col-12 custom-image">
-          <img src="img/gallery/gallery-3.jpg" alt="Image 3" />
-        </div>
-        <div class="col-md-3 col-12 custom-image">
-          <img src="img/gallery/gallery-4.jpg" alt="Image 4" />
-        </div>
-
-        <!-- Hidden initially -->
-        <div class="col-md-3 col-12 custom-image custom-gallery-hidden">
-          <img src="img/gallery/gallery-5.jpg" alt="Image 5" />
-        </div>
-        <div class="col-md-3 col-12 custom-image custom-gallery-hidden">
-          <img src="img/gallery/gallery-6.jpg" alt="Image 6" />
-        </div>
-        <div class="col-md-3 col-12 custom-image custom-gallery-hidden">
-          <img src="img/gallery/gallery-7.jpg" alt="Image 7" />
-        </div>
-        <div class="col-md-3 col-12 custom-image custom-gallery-hidden">
-          <img src="img/gallery/gallery-2.jpg" alt="Image 8" />
-        </div>
-      </div>
-
-      <!-- Toggle Button -->
-      <button id="viewMoreBtn" class="btn btn-secondary view-more-btn">
-        View More
-      </button>
+  <div class="row g-3">
+    <div class="col-md-3 col-6 custom-image">
+      <img loading="lazy" src="img/gallery/gallery-1.jpg" alt="Gallery Image 1" class="img-fluid rounded" />
     </div>
+    <div class="col-md-3 col-6 custom-image">
+      <img loading="lazy" src="img/gallery/gallery-3.jpg" alt="Gallery Image 2" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-3 col-6 custom-image">
+      <img loading="lazy" src="img/gallery/gallery-4.jpg" alt="Gallery Image 3" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-3 col-6 custom-image">
+      <img loading="lazy" src="img/gallery/gallery-2.jpg" alt="Gallery Image 4" class="img-fluid rounded" />
+    </div>
+  </div>
+</div>
 
     <!-- Gallery End -->
 
@@ -1607,18 +1637,19 @@
     ></a>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+<script src="lib/wow/wow.min.js" defer></script>
+<script src="lib/easing/easing.min.js" defer></script>
+<script src="lib/waypoints/waypoints.min.js" defer></script>
 
+<!-- Optional / Redundant - consider removing -->
+<script src="lib/owlcarousel/owl.carousel.min.js"  defer></script> 
+<script src="lib/counterup/counterup.min.js" defer></script>
+<script src="lib/parallax/parallax.min.js" defer></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script> <!-- Uncomment only if using lightbox functionality -->
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
