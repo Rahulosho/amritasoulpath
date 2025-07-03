@@ -242,7 +242,7 @@
         </div>
 
         <div class="row mb-3">
-          <div class="col-md-6">
+          <div class="col-md-6 mb-2">
             <label for="age" class="form-label">
               Age <span class="text-danger">*</span>
             </label>
@@ -285,13 +285,53 @@
         </div>
 
         <!-- Book Retreat Dropdown -->
-        <div class="mb-3">
-          <label for="retreat" class="form-label">Book Retreat</label>
-          <select class="form-select" id="retreat" name="book_retreat">
-            <option selected disabled>Select a retreat</option>
-            <option value="remember_her_retreat">Remember Her Retreat</option>
-          </select>
-        </div>
+<!-- Services Dropdowns -->
+<div class="row mb-3">
+  <!-- Retreat Dropdown -->
+  <div class="col-md-6 mb-2">
+    <label for="retreat" class="form-label">Retreat</label>
+    <select class="form-select" id="retreat" name="book_retreat">
+      <option selected disabled>Select a retreat</option>
+      <option value="remember_her_retreat">Remember Her Retreat</option>
+    </select>
+  </div>
+
+  <!-- Intuitive Coaching Dropdown -->
+  <div class="col-md-6 mb-2">
+    <label for="coaching" class="form-label">Intuitive Coaching</label>
+    <select class="form-select" id="coaching" name="intuitive_coaching">
+      <option selected disabled>Select a coaching option</option>
+      <option value="single_session">Single Session Intuitive Coaching</option>
+      <option value="three_session">3-Session Intuitive Coaching</option>
+      <option value="six_session">6-Session Intuitive Coaching</option>
+    </select>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <!-- E-Guides Dropdown -->
+  <div class="col-md-6 mb-2">
+    <label for="eguide" class="form-label">E-Books</label>
+    <select class="form-select" id="eguide" name="e_guide">
+      <option selected disabled>Select an E-Books</option>
+      <option value="travel_guide_se_asia">E-Travel Guide for South East Asia</option>
+      <option value="rewire_nervous_system">Rewire Your Nervous System (E-book)</option>
+
+    </select>
+  </div>
+
+  <!-- E-Books Dropdown -->
+  <div class="col-md-6 mb-2">
+    <label for="ebook" class="form-label">Wellness Programs</label>
+    <select class="form-select" id="ebook" name="ebook_program">
+      <option selected disabled>Select an option</option>
+      <option value="personal_meditation">Personalized Meditation Class</option>
+      <option value="personal_yoga">Personalized Hatha Yoga Class</option>
+      <option value="nutrition_program">8-Week Personalized Nutrition Program</option>
+      <option value="strong_within">Strong Within (8-Week Empowered Training)</option>
+    </select>
+  </div>
+</div>
 
         <!-- Extra Queries Field -->
         <div class="mb-3">
@@ -479,7 +519,7 @@
     <script src="lib/parallax/parallax.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- ✅ JavaScript to show modal & reset form -->
+        <!-- ✅ JavaScript to show modal & reset form -->
     <!-- ✅ JS Code -->
     <script>
       function showThankYou() {
@@ -527,6 +567,8 @@
         });
       });
     </script>
+
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
