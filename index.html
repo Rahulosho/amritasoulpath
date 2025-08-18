@@ -266,7 +266,7 @@
                   Reserve Your Spot
                 </button>
 
-                <a href="https://drive.google.com/file/d/10elvEkKWv0SrEsi9Emv65oH9vdx_o_lh/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1-SVTADXoePpm1FxBL-_GDUCTtSZHJUYL/view?usp=drive_link"
                   class="btn btn-outline-primary px-4 py-2 rounded-pill fw-semibold" target="_blank">Know More</a>
               </div>
             </div>
@@ -290,37 +290,47 @@
         </div>
         <div class="modal-body">
 
-          <form id="enrollmentForm" method="POST" novalidate>
-            <!-- API Key -->
-            <input type="hidden" name="apiKey" value="sf_lc2l01ia6gb55375egdb10nh" />
+<form id="enrollmentForm" method="POST" novalidate>
+  <!-- API Key -->
+  <input type="hidden" name="apiKey" value="sf_lc2l01ia6gb55375egdb10nh" />
 
-            <!-- Hidden fields -->
-            <input type="hidden" name="formType" value="retreat Reservation" />
-            <input type="hidden" name="campaign" value="Bali remember her Retreat" />
+  <!-- Hidden fields -->
+  <input type="hidden" name="formType" value="retreat Reservation" />
+  <input type="hidden" name="campaign" value="Bali remember her Retreat" />
 
-            <!-- Honeypot field -->
-            <input type="text" name="honeypot" style="display: none" tabindex="-1" autocomplete="off" />
+  <!-- Honeypot field -->
+  <input type="text" name="honeypot" style="display: none" tabindex="-1" autocomplete="off" />
 
-            <!-- Name -->
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" name="name" required />
-              <div class="invalid-feedback">Please enter your name.</div>
-            </div>
+  <!-- Name -->
+  <div class="mb-3">
+    <label for="name" class="form-label">Your Name</label>
+    <input type="text" class="form-control" id="name" name="name" required />
+    <div class="invalid-feedback">Please enter your name.</div>
+  </div>
 
-            <!-- Email -->
-            <div class="mb-3">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" name="email" required />
-              <div class="invalid-feedback">Please enter a valid email.</div>
-            </div>
+  <!-- Email -->
+  <div class="mb-3">
+    <label for="email" class="form-label">Your Email</label>
+    <input type="email" class="form-control" id="email" name="email" required />
+    <div class="invalid-feedback">Please enter a valid email.</div>
+  </div>
 
-            <div class="d-grid">
-              <button type="submit" class="btn btn-primary rounded-pill fw-semibold">
-                Submit
-              </button>
-            </div>
-          </form>
+  <!-- Privacy Policy Checkbox -->
+  <div class="mb-3 form-check">
+    <input class="form-check-input" type="checkbox" id="privacyPolicy" required />
+    <label class="form-check-label" for="privacyPolicy">
+      I agree to the <a href="policy.html" target="_blank">Privacy Policy</a>.
+    </label>
+    <div class="invalid-feedback">You must agree to the Privacy Policy before submitting.</div>
+  </div>
+
+  <div class="d-grid">
+    <button type="submit" class="btn btn-primary rounded-pill fw-semibold">
+      Submit
+    </button>
+  </div>
+</form>
+          
         </div>
       </div>
     </div>
@@ -1422,7 +1432,7 @@
         <!-- Upcoming Retreat -->
         <div class="col-lg-3 col-md-4 col-sm-6">
           <h5 class="text-white mb-4">Upcoming Retreat</h5>
-          <a href="https://payhip.com/b/0CSos" class="text-white-50 btn btn-link">Remember Her</a>
+          <a href="https://drive.google.com/file/d/1-SVTADXoePpm1FxBL-_GDUCTtSZHJUYL/view?usp=drive_link" class="text-white-50 btn btn-link">Remember Her</a>
         </div>
       </div>
     </div>
