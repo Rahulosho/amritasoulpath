@@ -1,0 +1,135 @@
+code for upcoming retreat
+    <section class="remember-section py-5 bg-beige position-relative">
+      <div
+        class="container px-3 px-sm-4 px-md-0 position-relative"
+        style="z-index: 1"
+      >
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-primary">Upcoming Retreat</h2>
+          <p class="lead text-muted">
+            Emerge Retreat - A Week of Movement, Adventure & Transformation
+          </p>
+        </div>
+
+        <div
+          class="card remember-card shadow-lg border-0 mx-auto position-relative"
+          style="z-index: 2"
+        >
+          <div class="row g-0">
+            <!-- Left: Image -->
+            <div class="col-md-6">
+              <picture>
+                <!-- Mobile image -->
+                <source
+                  srcset="img/buddha-phuket.jpg"
+                  media="(max-width: 767px)"
+                />
+                <!-- Desktop image -->
+                <source srcset="img/buddha-phuket.jpg" media="(min-width: 768px)" />
+                <img
+                  src="img/buddha-phuket.jpg"
+                  alt="Retreat in Phuket"
+                  class="img-fluid h-100 w-100 object-fit-cover rounded-start-4"
+                />
+              </picture>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="col-md-6 bg-white rounded-end-4">
+              <div
+                class="p-4 p-md-5 h-100 d-flex flex-column justify-content-between"
+              >
+                <!-- Date and Location -->
+                <div class="mb-3">
+                  <div class="d-flex align-items-center mb-2 text-muted">
+                    <i class="fas fa-calendar-alt me-2"></i>
+                    <small>May 3 – 10, 2026</small>
+                  </div>
+                  <div class="d-flex align-items-center text-muted">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <small>Phuket, Thailand</small>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <div class="mb-4">
+                  <h3 class="fw-semibold text-dark">
+                    Balance. Strength. Transformation.
+                  </h3>
+                  <p class="text-muted small">
+                    A retreat designed to reconnect you with your body,
+                    challenge your limits, and elevate your spirit. All in
+                    tropical paradise. Start each morning with energizing
+                    movement, explore the island through unforgettable
+                    adventure.
+                  </p>
+                  <p class="fw-bolder">
+                    The total retreat cost is $2,222 USD. <br>
+                    A deposit of $388 USD is required to secure the spot.
+                    
+                  </p>
+                  
+                </div>
+
+                <!-- Highlights -->
+                <ul class="list-unstyled mb-4 small">
+                  <li class="mb-2">
+                    <i class="fas fa-ship me-2 text-primary"></i> Boat trip to
+                    beautiful islands
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-dumbbell me-2 text-primary"></i> Muay Thai, S&C, gyms & more
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-utensils me-2 text-primary"></i>&nbsp; Nourishing
+                    Diet
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-book me-2 text-primary"></i>&nbsp; Nutrition workshop
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-umbrella-beach me-2 text-primary"></i> Stay
+                    just 2 minutes from the beach
+                  </li>
+                </ul>
+
+                <!-- CTA Buttons -->
+                <div
+                  class="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-md-start"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-primary px-4 py-2 rounded-pill fw-semibold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#reserveModal"
+                  >
+                    Reserve Your Spot
+                  </button>
+
+                  <a
+                    href="https://drive.google.com/file/d/1BRTAPrN5yJ_qDD29SmLxnA8p9viE9KAH/view?usp=sharing"
+                    class="btn btn-outline-primary px-4 py-2 rounded-pill fw-semibold"
+                    target="_blank"
+                    >Know More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+          <!-- past Retreat -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <h5 class="text-white mb-4">Past Retreat</h5>
+            <a
+              href="pastretreat.html"
+              class="text-white-50 btn btn-link"
+              >Remember Her</a
+            >
+          </div>
